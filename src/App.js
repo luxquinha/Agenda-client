@@ -1,11 +1,8 @@
+import LandingPage from "./pages/LandingPage.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <span>
-        Hello World
-      </span>
-    </div>
+    <LandingPage/>
   );
 }
 
