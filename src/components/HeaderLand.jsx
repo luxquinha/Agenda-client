@@ -1,6 +1,7 @@
 import React from 'react'
 import { TabNav, Button } from '@radix-ui/themes'
 import { ClipboardList, ArrowRightToLine } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 function HeaderLand() {
   return (
@@ -24,8 +25,10 @@ function HeaderLand() {
           </span>
         </TabNav.Link>
       </TabNav.Root>
-      <Button size={'2'} variant='outline' radius='large' color='orange' className='hover:bg-orange-600 hover:text-white'>
-        Login <ArrowRightToLine size={18}/>
+      <Button size={'2'} variant='outline' radius='large' color='orange' asChild className='hover:bg-orange-600 hover:text-white hover:cursor-pointer'>
+        <Link to={'/login'}>
+          Login <ArrowRightToLine size={18}/>
+        </Link>
       </Button>
     </div>
   </div>
