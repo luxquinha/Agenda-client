@@ -5,20 +5,26 @@ import { ClipboardList, ArrowRightToLine } from 'lucide-react'
 function HeaderLand() {
   return (
   <div className='flex flex-row justify-between items-center px-8'>
-    <span className=' flex flex-row gap-x-1 text-md uppercase font-semibold mt-3'><ClipboardList/> Agenda</span>
+    <span className=' flex flex-row gap-x-1 text-md uppercase font-semibold mt-3 text-orange-600'><ClipboardList/> Agenda</span>
     <div className='flex flex-row gap-x-16 items-center'>
-      <TabNav.Root color='amber' className='gap-3'>
+      <TabNav.Root color='orange' className='gap-3'>
         <TabNav.Link href='#' active>
-          Home
+          <span className='text-orange-500'>
+            Home
+          </span>
         </TabNav.Link>
         <TabNav.Link href='#'>
-          About
+          <span className='text-orange-500'>
+            About
+          </span>
         </TabNav.Link>
         <TabNav.Link href='#'>
-          Funcionalidades
+          <span className='text-orange-500'>
+            Funcionalidades
+          </span>
         </TabNav.Link>
       </TabNav.Root>
-      <Button size={'2'} variant='surface' radius='large' color='bronze'>
+      <Button size={'2'} variant='outline' radius='large' color='orange' className='hover:bg-orange-600 hover:text-white'>
         Login <ArrowRightToLine size={18}/>
       </Button>
     </div>
