@@ -6,6 +6,7 @@ import '@radix-ui/themes/styles.css';
 // import App from './App';
 import { Theme } from '@radix-ui/themes'
 import LandingPage from './pages/LandingPage';
+import LoginPage from './pages/LoginPage';
 
 const routes = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const routes = createBrowserRouter([
   },
   {
     path:'/login',
-    element: <span>Página de login</span>
+    element: <LoginPage/>
   }
 ])
 
